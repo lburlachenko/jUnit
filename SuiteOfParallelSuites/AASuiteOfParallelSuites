@@ -5,7 +5,14 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
-
+/**
+ * 
+ * @author Lena
+ * Runs AAParallelSuite2 after AAParallelSuite1,
+ * where AAParallelSuite1 runs all test classes in it in parallel
+ * and AAParallelSuite2 runs all test classes in it in parallel.
+ *
+ */
 @RunWith(Suite.class)
 @SuiteClasses({
 	AAParallelSuite1.class,
