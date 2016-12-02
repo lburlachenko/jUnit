@@ -1,0 +1,27 @@
+package com.complianceandrisks.c2p.test.selenium.tests;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@RunWith(Suite.class)
+@SuiteClasses({
+	AATest3.class,
+	AATest4.class
+})
+
+public final class AASuite2{
+    @BeforeClass
+    public static void beforeClass(){
+    	System.out.println("________________AASuite2 >> beforeClass");
+
+    }
+    @AfterClass
+    public static void afterClass(){
+    	System.out.println("________________AASuite2 >> afterClass");
+    }
+
+}
+
