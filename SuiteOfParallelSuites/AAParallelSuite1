@@ -1,0 +1,27 @@
+package com.complianceandrisks.c2p.test.selenium.tests;
+
+import javax.servlet.jsp.JspException;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite.SuiteClasses;
+
+import com.mycila.junit.concurrent.ConcurrentSuiteRunner;
+
+@RunWith(ConcurrentSuiteRunner.class)
+@SuiteClasses({
+	AATest1.class,
+	AATest2.class
+})
+
+public final class AAParallelSuite1{
+	@BeforeClass
+	public static void beforeClass() throws JspException {
+		System.out.println("AAParallelSuite1 >> @BeforeClass");
+	}
+	@AfterClass
+	public static void afterClass() {
+		System.out.println("AAParallelSuite1 >> afterClass");
+	}
+}
