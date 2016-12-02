@@ -1,0 +1,20 @@
+Console output running AAParallelSuites:
+
+ParallelSuites >> BEFORECLASS
+________________AASuite1 >> beforeClass
+________________AASuite2 >> beforeClass
+AATest1 >> beforeClass
+AATest3 >> beforeClass
+AATest1 >> test11
+AATest3 >> test31
+AATest1 >> afterClass
+AATest3 >> afterClass
+AATest2 >> beforeClass
+AATest4 >> beforeClass
+AATest2 >> test21
+AATest4 >> test41
+AATest2 >> afterClass
+AATest4 >> afterClass
+________________AASuite1 >> afterClass
+________________AASuite2 >> afterClass
+ParallelSuites >> AFTERCLASS
