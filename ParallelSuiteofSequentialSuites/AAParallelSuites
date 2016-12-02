@@ -1,0 +1,33 @@
+package com.complianceandrisks.c2p.test.selenium.tests;
+
+import javax.servlet.jsp.JspException;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite.SuiteClasses;
+
+import com.mycila.junit.concurrent.ConcurrentSuiteRunner;
+/**
+ * Runs AASuite1 and AASuite2 in parallel.
+ * But the tests in the AASuite1 and AASuite2 run sequentially.
+ * @author Lena
+ *
+ */
+@RunWith(ConcurrentSuiteRunner.class)
+@SuiteClasses({
+	AASuite1.class,
+	AASuite2.class
+})
+
+public final class AAParallelSuites{
+	@BeforeClass
+  public static void beforeClass() throws JspException {
+
+		System.out.println("ParallelSuites >> BEFORECLASS");
+  }
+	@AfterClass
+  public static void afterClass() {
+		System.out.println("ParallelSuites >> AFTERCLASS");
+  }
+}
