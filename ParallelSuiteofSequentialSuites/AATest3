@@ -1,0 +1,24 @@
+package com.complianceandrisks.c2p.test.selenium.tests;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class AATest3 {
+    @BeforeClass
+    public static void beforeClass(){
+    	System.out.println("AATest3 >> beforeClass");
+
+    }
+    @AfterClass
+    public static void afterClass(){
+    	System.out.println("AATest3 >> afterClass");
+    }
+
+	@Test
+	public void test31(){
+		System.out.println("AATest3 >> test31");
+		
+	}
+
+}
